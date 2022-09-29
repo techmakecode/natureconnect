@@ -1,4 +1,6 @@
 $(function () {
+    AOS.init();
+
     $(window).on("scroll", function () {
         var bodyScroll = $(window).scrollTop(),
             navbar = $(".navbar"),
@@ -30,22 +32,43 @@ $(function () {
         }
     });
     var swiper = new Swiper(".teamsSlider", {
-        // slidesPloop: true,
+        spaceBetween: 0,
         centeredSlides: true,
         slidesPerView: 3,
-        // erView: 'auto',
+       // erView: 'auto',
+        //autoHeight: true,
+        slidesPloop: true,
+        erView: 'auto',
         autoHeight: true,
-        // loop: true,
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: true,
-        // },
-        breakpoints: {
-            375: {
-                slidesPerView: 1,
-                spaceBetween: 0
-                // centeredSlides: true,
-            }
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
         },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1.1,
+              spaceBetween: 0,
+              centeredSlides: true,
+              pagination: {
+                el: ".teampagination",
+                clickable: true
+            }
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1.1,
+                spaceBetween: 0,
+                centeredSlides: true,
+            },
+            // when window width is >= 640px
+            768: {
+                spaceBetween: 0,
+                centeredSlides: true,
+                slidesPerView: 3,
+            }
+          }
     });
+   
 });
