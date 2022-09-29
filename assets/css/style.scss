@@ -1,14 +1,18 @@
-$font-family_1: 'Raleway',
-    sans-serif;
-$color_1: #316F6F;
+$font-family_1: "Raleway", sans-serif;
+$color_1: #316f6f;
 $titlecolor: #062929;
 $color_2: #000;
 $basefontD: 16px;
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$basefontM: 14px;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: $basefontD;
+    @media screen and (max-width: 767px) {
+        font-size: $basefontM;
+        letter-spacing: 1px;
+    }
     font-weight: 400;
     letter-spacing: 2px;
 }
@@ -55,7 +59,7 @@ main {
 
 .btn {
     border: solid 1px #707070;
-    color: #4E5C3D;
+    color: #4e5c3d;
     text-align: center;
     font-size: $basefontD;
     padding: 20px 40px;
@@ -63,13 +67,18 @@ main {
     background: #fff;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        padding: 10px 20px;
+        font-size: $basefontM;
+    }
+
     span {
         position: relative;
         z-index: 2;
     }
 
     &::after {
-        content: '';
+        content: "";
         width: 0;
         height: 100%;
         position: absolute;
@@ -78,8 +87,8 @@ main {
         z-index: 1;
         background: #222;
         color: #fff;
-        -webkit-transition: all .3s ease;
-        transition: all .3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
 
     &:hover {
@@ -90,10 +99,9 @@ main {
         &::after {
             width: 100%;
             left: 0;
-            -webkit-transition: width .3s ease;
-            transition: width .3s ease;
+            -webkit-transition: width 0.3s ease;
+            transition: width 0.3s ease;
         }
-
     }
 }
 
@@ -106,6 +114,11 @@ main {
     height: 90px;
     padding: 30px 0 0;
 
+    @media screen and (max-width: 420px) {
+        .logo-img {
+            width: 160px;
+        }
+    }
 
     .container {
         max-width: max-content;
@@ -136,7 +149,7 @@ main {
         }
 
         .active {
-            color: $color_2  !important;
+            color: $color_2 !important;
         }
     }
 }
@@ -167,7 +180,7 @@ main {
         }
 
         .active {
-            color: $color_2  !important;
+            color: $color_2 !important;
         }
 
         .logo {
@@ -261,6 +274,7 @@ main {
 
     .desc {
         margin-bottom: 30px;
+        padding: 20px;
 
         p {
             margin-bottom: 30px;
@@ -291,8 +305,6 @@ main {
                 animation-delay: 0.8s;
             }
         }
-
-
 
         p {
             font-size: 18px;
@@ -353,6 +365,17 @@ main {
 
 .fullheight {
     height: 100vh;
+
+    @media screen and (max-width: 767px) {
+        height: 70vh;
+
+        .video-preview {
+            height: 100%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        height: 50vh;
+    }
 }
 
 /* Video Componant Starts */
@@ -367,17 +390,17 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 120px;
+        @media screen and (max-width: 767px) {
+            width: 60px;
+        }
     }
-
-
-
 
     .videoKma {
         position: relative;
         overflow: hidden;
 
         &::after {
-            content: '';
+            content: "";
             background: url(../images/vid-sky-bg.png) no-repeat 0 0;
             width: 100%;
             height: 100%;
@@ -397,8 +420,6 @@ main {
         position: relative;
     }
 }
-
-
 
 .popupBox {
     position: fixed;
@@ -436,11 +457,8 @@ main {
     }
 }
 
-
-
 .sliderWrp {
     position: relative;
-
 
     .btn {
         position: absolute;
@@ -449,13 +467,18 @@ main {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         border: transparent;
-        background: rgba(78, 92, 61, .8);
+        background: rgba(78, 92, 61, 0.8);
         color: #fff;
         text-transform: uppercase;
         padding: 15px 25px;
         font-size: 14px;
         opacity: 0;
         transition: 1s ease-out;
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 20px;
+            font-size: $basefontM;
+        }
     }
 
     .swiper-slide {
@@ -471,13 +494,12 @@ main {
         bottom: 0;
         position: relative;
 
-
         .swiper-pagination-bullet {
             background-color: transparent;
-            border: 1px solid #4E5C3D;
+            border: 1px solid #4e5c3d;
 
             &.swiper-pagination-bullet-active {
-                background-color: #4E5C3D;
+                background-color: #4e5c3d;
                 padding: 5px;
                 position: relative;
                 top: 2px;
@@ -487,106 +509,143 @@ main {
 }
 
 .teamssliderWrp {
-    background-color: #1F2C01;
+    background-color: #1f2c01;
     height: 100vh;
+    .teamsWrp {
+        position: relative;
+        .teamsSlider {
+            padding: 8% 0;
 
-    .teamsSlider {
-        padding: 8% 0;
+            
+            .swiper-slide {
+                transform: scale(0.6);
+                transition: all 0.5s ease;
 
-        .swiper-slide {
-            transform: scale(.6);
-            transition: all .5s ease;
-
-            &.swiper-slide-prev {
-                transform-origin: 0 10%;
-            }
-
-            &.swiper-slide-next {
-                transform-origin: right 10%;
-            }
-
-            .teamThub {
-                width: 100%;
-
-                image {
-                    width: 100%;
+                @media screen and (max-width: 767px) {
+                    transform: scale(1);
                 }
-            }
 
-            .desc {
-                display: none;
-            }
+                &.swiper-slide-prev {
+                    transform-origin: 0 10%;
+                }
 
-            &.swiper-slide-active {
-                transform: scale(1.5);
-                transform-origin: 45% 40%;
+                &.swiper-slide-next {
+                    transform-origin: right 10%;
+                }
 
                 .teamThub {
-                    width: 60%;
-                    float: left;
+                    width: 100%;
 
-
+                    image {
+                        width: 100%;
+                    }
                 }
 
-                .teamBio {
-                    display: table;
-                    position: relative;
+                .desc {
+                    display: none;
+                }
 
+                &.swiper-slide-active {
+                    transform: scale(1.5);
+                    transform-origin: 45% 40%;
 
-                    .desc {
-                        width: 40%;
+                    @media screen and (max-width: 767px) {
+                        transform: scale(1);
+                        transform-origin: 0;
+                    }
+
+                    .teamThub {
+                        width: 60%;
                         float: left;
-                        display: block;
-                        background-color: #4E5C3D;
-                        padding: 20px;
-                        position: absolute;
-                        top: -5%;
-                        right: 0;
-                        height: 110%;
-
-                        h3,
-                        h4,
-                        p {
-                            color: #fff;
+                        @media screen and (max-width: 767px) {
+                            width: 50%;
+                            float: none;
+                            display: table;
+                            margin: auto;
                         }
+                    }
 
-                        h3 {
-                            font-size: 18px;
-                            margin: 0;
-                            padding: 0;
-                            line-height: normal;
-                        }
+                    .teamBio {
+                        display: table;
+                        position: relative;
 
-                        h4 {
-                            font-size: 11px;
-                            margin: 0 0 15px 0;
-                            padding: 0;
-                            line-height: normal;
-                        }
-
-                        p {
-                            font-size: 11px;
-                        }
-
-                        .btn {
-                            font-size: 13px;
-                            padding: 10px 30px;
-                        }
-
-                        .linkden {
+                        .desc {
+                            width: 40%;
+                            float: left;
+                            display: block;
+                            background-color: #4e5c3d;
+                            padding: 20px;
                             position: absolute;
-                            bottom: 15px;
-                            right: 15px;
-                            width: 15px;
+                            top: -5%;
+                            right: 0;
+                            height: 110%;
+
+                            @media screen and (max-width: 767px) {
+                                width: 70%;
+                                float: none;
+                                display: table;
+                                position: relative;
+                                top: 0;
+                                right: 0;
+                                margin: auto;
+                                height: auto;
+                            }
+
+                            h3,
+                            h4,
+                            p {
+                                color: #fff;
+                            }
+
+                            h3 {
+                                font-size: 18px;
+                                margin: 0;
+                                padding: 0;
+                                line-height: normal;
+                            }
+
+                            h4 {
+                                font-size: 11px;
+                                margin: 0 0 15px 0;
+                                padding: 0;
+                                line-height: normal;
+                            }
+
+                            p {
+                                font-size: 11px;
+                            }
+
+                            .btn {
+                                font-size: 13px;
+                                padding: 10px 30px;
+                            }
+
+                            .linkden {
+                                position: absolute;
+                                bottom: 15px;
+                                right: 15px;
+                                width: 15px;
+                            }
                         }
                     }
                 }
             }
-
-
         }
+        .swiper-pagination { 
+            position: relative;
 
+            .swiper-pagination-bullet {
+                background-color: transparent;
+                border: 1px solid #ccc;
 
+                &.swiper-pagination-bullet-active {
+                    background-color: #ccc;
+                    padding: 5px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
     }
 }
 
@@ -600,7 +659,7 @@ main {
 
         .sitePlanContent {
             padding: 40px;
-            background: #4E5C3D;
+            background: #4e5c3d;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -619,7 +678,7 @@ main {
             .btn {
                 background: transparent;
                 color: #fff;
-                border-color: #FFFFFF;
+                border-color: #ffffff;
             }
         }
     }
@@ -627,7 +686,7 @@ main {
 
 footer {
     .contactSec {
-        background: #1F2C01;
+        background: #1f2c01;
         padding: 0 0 5% 0;
         overflow-x: hidden;
 
@@ -643,13 +702,13 @@ footer {
             gap: 6%;
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: calc(100% - 40px);
                 height: 100%;
                 right: -50%;
                 top: 0;
-                background: #DEDEDE;
+                background: #dedede;
                 z-index: -1;
             }
 
@@ -706,7 +765,6 @@ footer {
                         }
                     }
                 }
-
             }
 
             .contactForm {
@@ -727,7 +785,7 @@ footer {
             margin-top: 100px;
 
             small {
-                font-size: 0.60em;
+                font-size: 0.6em;
                 text-align: center;
             }
 
@@ -743,7 +801,6 @@ footer {
 }
 
 .form {
-
     input,
     input:focus {
         width: 100%;
@@ -751,12 +808,16 @@ footer {
         border: 0;
         outline: none;
         box-shadow: none;
-        border-bottom: solid 1px #1F2C01;
+        border-bottom: solid 1px #1f2c01;
         padding: 10px 10px 10px 0;
         font-size: 18px;
+
+        @media screen and (max-width: 767px) {
+            padding: 6px 6px 6px 0;
+        }
     }
 
-    .form-row+.form-row {
+    .form-row + .form-row {
         margin-top: 40px;
     }
 
@@ -794,6 +855,7 @@ footer {
     .aboutSec {
         height: auto;
         max-height: inherit;
+        margin: 30px auto;
     }
 
     .aboutWrp .aboutSec {
@@ -825,6 +887,7 @@ footer {
     .aboutWrp.aboutUsWrp {
         height: auto;
         padding: 0;
+        background-size: cover;
     }
 
     .aboutWrp .aboutSec.aboutUs h2 {
@@ -833,25 +896,6 @@ footer {
 
     .teamssliderWrp {
         height: auto;
-    }
-
-    .teamssliderWrp .teamsSlider .swiper-slide.swiper-slide-active .teamThub {
-        width: 100%;
-        float: none;
-    }
-
-    .teamssliderWrp .teamsSlider .swiper-slide.swiper-slide-active .teamBio .desc {
-        width: 100%;
-        float: none;
-        position: relative;
-        top: 0;
-        right: 0;
-        height: auto;
-    }
-
-    .teamssliderWrp .teamsSlider .swiper-slide.swiper-slide-active {
-        transform: scale(1);
-        transform-origin: 0;
     }
 
     footer .contactSec .contactWrapper {
@@ -866,7 +910,7 @@ footer {
 
     footer .contactSec .contactWrapper .contactForm {
         width: 100%;
-        background: #DEDEDE;
+        background: #dedede;
     }
 
     footer .contactSec .contactWrapper::after {
@@ -875,5 +919,11 @@ footer {
 
     footer .contactSec .socialSec {
         margin-top: 20px;
+    }
+}
+.navbar-toggler {
+    border: transparent;
+    &:focus {
+        box-shadow: none;
     }
 }
