@@ -211,6 +211,15 @@ img {
   text-transform: uppercase;
 }
 
+.navbar-toggler {
+  border: transparent;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .aboutWrp {
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -485,30 +494,6 @@ img {
 .videoSection .videobox,
 .videoSection .videoKma {
   position: relative;
-}
-
-@-webkit-keyframes breath {
-  0% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 102% 102%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
-}
-
-@keyframes breath {
-  0% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 102% 102%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
 }
 
 .popupBox {
@@ -1056,12 +1041,18 @@ footer .contactSec .socialSec .social {
   }
 }
 
-.navbar-toggler {
-  border: transparent;
+.location {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.aboutthevillas {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.siteplan {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
