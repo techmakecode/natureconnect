@@ -26,10 +26,25 @@ $(function () {
     });
 
     var swiper = new Swiper(".pagislider", {
+        grabCursor: true,
+        loop: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-10%", 0, -1],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true
-        }
+        },
+        keyboard: {
+            enabled: true,
+          },
     });
     var swiper = new Swiper(".teamsSlider", {
         spaceBetween: 0,
@@ -41,6 +56,9 @@ $(function () {
         erView: 'auto',
         autoHeight: true,
         loop: true,
+        keyboard: {
+            enabled: true,
+          },
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
