@@ -1,4 +1,3 @@
-
 .aboutWrp {
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -240,6 +239,8 @@
         position: relative;
         overflow: hidden;
 
+
+
         // &::after {
         //     content: "";
         //     background-image: url(../images/vid-sky-bg.png);
@@ -265,13 +266,47 @@
         }
     }
 
+    .textWrp {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      
+        text-align: center;
+        width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(/assets/images/text-wrap-bg.png) no-repeat 0 0;
+            background-size: cover;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
     .videobox,
     .videoKma {
         position: relative;
     }
 }
 
- 
+
 
 .popupBox {
     position: fixed;
@@ -312,7 +347,7 @@
 .sliderWrp {
     position: relative;
 
-     
+
 
     .btn {
         position: absolute;
@@ -337,6 +372,7 @@
 
     .swiper-slide {
         height: 100vh;
+
         &.swiper-slide-active {
             .btn {
                 bottom: 30px;
@@ -347,7 +383,7 @@
 
     .swiper-pagination {
         bottom: 0;
-        position: relative; 
+        position: relative;
 
         .swiper-pagination-bullet {
             background-color: transparent;
@@ -687,6 +723,7 @@ footer {
         padding: 10px 30px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .navbar .container {
         max-width: 100%;

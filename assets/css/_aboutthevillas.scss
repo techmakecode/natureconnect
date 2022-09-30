@@ -1,3 +1,61 @@
 .aboutthevillas {
-     box-sizing: border-box;
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     background-size: cover;
+     padding: 40px 0;
+
+     .midcontainer {
+          text-align: center;
+          max-width: 800px;
+          margin: auto;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+     }
+}
+
+.symbollist {
+     padding: 0;
+     list-style: none;
+     width: 100%;
+
+     ul {
+          list-style: none;
+          padding: 15px 0;
+          margin: 0;
+          display: flex;
+
+          li {
+               flex-basis: 33.33%;
+               padding: 10px;
+               text-align: left;
+
+               img {
+                    display: inline;
+                    max-width: 50px;
+                    margin-right: 20px;
+                    align-items: center;
+               }
+          }
+     }
+}
+
+.textdetails {
+     margin: 40px 0;
+     color: #4E5C3D;
+
+     h2 {
+          text-align: center;
+          font-size: 30px;
+          font-weight: 500;
+          margin-bottom: 30px;
+     }
+
+     li {
+          text-align: left;
+          list-style: disc;
+          margin-bottom: 15px;
+     }
 }

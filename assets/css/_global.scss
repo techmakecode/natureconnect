@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
@@ -43,6 +42,13 @@ h4 {
     color: $color_2;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -221,10 +227,18 @@ img {
         }
     }
 }
+
 .navbar-toggler {
     border: transparent;
 
     &:focus {
         box-shadow: none;
     }
+}
+
+.midcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

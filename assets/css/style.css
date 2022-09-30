@@ -44,6 +44,13 @@ h4 {
   margin-top: 20px;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -218,6 +225,19 @@ img {
 .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.midcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 
 .aboutWrp {
@@ -489,6 +509,40 @@ img {
 
 .videoSection .videoKma img {
   height: 100%;
+}
+
+.videoSection .textWrp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.videoSection .textWrp::before {
+  content: '';
+  position: absolute;
+  background: url(/assets/images/text-wrap-bg.png) no-repeat 0 0;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.videoSection .textWrp h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.videoSection .textWrp p {
+  color: #fff;
 }
 
 .videoSection .videobox,
@@ -1047,8 +1101,78 @@ footer .contactSec .socialSec .social {
 }
 
 .aboutthevillas {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.aboutthevillas .midcontainer {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.symbollist {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.symbollist ul {
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.symbollist ul li {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  padding: 10px;
+  text-align: left;
+}
+
+.symbollist ul li img {
+  display: inline;
+  max-width: 50px;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textdetails {
+  margin: 40px 0;
+  color: #4E5C3D;
+}
+
+.textdetails h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.textdetails li {
+  text-align: left;
+  list-style: disc;
+  margin-bottom: 15px;
 }
 
 .siteplan {
