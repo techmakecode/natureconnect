@@ -28,29 +28,20 @@ $(function () {
     var swiper = new Swiper(".pagislider", {
         grabCursor: true,
         loop: true,
-        effect: "creative",
-        creativeEffect: {
-          prev: {
-            shadow: true,
-            translate: ["-10%", 0, -1],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        },
+        autoHeight: false,
         pagination: {
             el: ".swiper-pagination",
             clickable: true
         },
         keyboard: {
             enabled: true,
-          },
+        },
     });
     var swiper = new Swiper(".teamsSlider", {
         spaceBetween: 0,
         centeredSlides: true,
         slidesPerView: 3,
-       // erView: 'auto',
+        // erView: 'auto',
         //autoHeight: true,
         slidesPloop: true,
         erView: 'auto',
@@ -58,7 +49,7 @@ $(function () {
         loop: true,
         keyboard: {
             enabled: true,
-          },
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
@@ -66,13 +57,13 @@ $(function () {
         breakpoints: {
             // when window width is >= 320px
             320: {
-              slidesPerView: 1.1,
-              spaceBetween: 0,
-              centeredSlides: true,
-              pagination: {
-                el: ".teampagination",
-                clickable: true
-            }
+                slidesPerView: 1.1,
+                spaceBetween: 0,
+                centeredSlides: true,
+                pagination: {
+                    el: ".teampagination",
+                    clickable: true
+                }
             },
             // when window width is >= 480px
             480: {
@@ -86,7 +77,7 @@ $(function () {
                 centeredSlides: true,
                 slidesPerView: 3,
             }
-          }
+        }
     });
-   
+
 });

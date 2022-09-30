@@ -573,6 +573,10 @@ img {
   }
 }
 
+.sliderWrp .swiper-slide {
+  height: 100vh;
+}
+
 .sliderWrp .swiper-slide.swiper-slide-active .btn {
   bottom: 30px;
   opacity: 1;
@@ -586,6 +590,7 @@ img {
 .sliderWrp .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
   border: 1px solid #4e5c3d;
+  opacity: 1;
 }
 
 .sliderWrp .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
