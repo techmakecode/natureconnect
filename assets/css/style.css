@@ -973,7 +973,6 @@ footer .contactSec .socialSec .social {
 @media screen and (max-width: 767px) {
   .navbar .container {
     max-width: 100%;
-    background: #fff;
   }
   .navbar {
     background: transparent;
