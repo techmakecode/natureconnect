@@ -360,7 +360,41 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  .fullheight {
+    height: calc(500px - 50px);
+  }
   .fullheight .video-preview {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fullheight {
+    height: calc(400px - 50px);
+  }
+  .fullheight .video-preview {
+    height: 100%;
+  }
+}
+
+.herovidFht {
+  height: calc(100vh - 50px);
+}
+
+@media screen and (max-width: 767px) {
+  .herovidFht {
+    height: calc(100vh - 50px);
+  }
+  .herovidFht .video-preview {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .herovidFht {
+    height: calc(100vh - 50px);
+  }
+  .herovidFht .video-preview {
     height: 100%;
   }
 }

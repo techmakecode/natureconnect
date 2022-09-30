@@ -370,13 +370,40 @@ main {
     height: calc(100vh - 50px);
 
     @media screen and (max-width: 767px) {
-
+        height: calc(500px - 50px);
 
         .video-preview {
             height: 100%;
         }
     }
+    @media screen and (max-width: 400px) {
+        height: calc(400px - 50px);
 
+        .video-preview {
+            height: 100%;
+        }
+    }
+    
+
+}
+
+.herovidFht{
+    height: calc(100vh - 50px);
+
+    @media screen and (max-width: 767px) {
+
+        height: calc(100vh - 50px);
+        .video-preview {
+            height: 100%;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        height: calc(100vh - 50px);
+
+        .video-preview {
+            height: 100%;
+        }
+    }
 }
 
 /* Video Componant Starts */
