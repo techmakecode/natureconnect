@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -23,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Gilda Display", serif;
+  font-family: 'Gilda Display', serif;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
   color: #062929;
@@ -245,7 +245,6 @@ img {
   float: left;
   width: 100%;
 }
-<<<<<<< HEAD
 
 .tabsWrap .tablink {
   display: -webkit-box;
@@ -263,13 +262,8 @@ img {
 
 .tabsWrap .tablink li.active {
   border-bottom: 4px solid #4E5C3D;
-=======
-.tabsWrap .tablink li {
-  display: inline-flex;
-  flex-basis: 16.66%;
-  padding: 10px;
->>>>>>> 94fe3bcbe0e8e7f9582ee1ffee1c929ec36c2349
 }
+
 .tabsWrap .tablink li a {
   text-decoration: none;
   color: #4E5C3D;
@@ -284,6 +278,7 @@ img {
   margin: 40px auto;
   display: table;
 }
+
 .tabsWrap .tabData .tabDetails {
   float: left;
   width: 100%;
@@ -1296,41 +1291,35 @@ footer .contactSec .socialSec .social {
   -ms-flex-preferred-size: calc(33% - 5px);
       flex-basis: calc(33% - 5px);
 }
-<<<<<<< HEAD
 
-.location .infoSecBox {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
 .location .bg {
   background-repeat: no-repeat;
   background-position: 0 60px;
   background-size: 100% 100%;
 }
+
 .location .infoSec {
   padding: 5% 0 10% 0;
 }
+
 .location .infoSecBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
->>>>>>> 94fe3bcbe0e8e7f9582ee1ffee1c929ec36c2349
   margin: auto;
   max-width: 1500px;
 }
 
 .location .infoSecBox .img {
-<<<<<<< HEAD
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-=======
-  flex-basis: 50%;
   margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
->>>>>>> 94fe3bcbe0e8e7f9582ee1ffee1c929ec36c2349
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .location .infoSecBox .infoSecContent {
@@ -1339,7 +1328,6 @@ footer .contactSec .socialSec .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   -webkit-box-orient: vertical;
@@ -1349,12 +1337,6 @@ footer .contactSec .socialSec .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Avenir';
-=======
-  flex-basis: 50%;
-  flex-direction: column;
-  justify-content: center;
->>>>>>> 94fe3bcbe0e8e7f9582ee1ffee1c929ec36c2349
 }
 
 .location .infoSecBox .infoSecContent h3 {
@@ -1408,11 +1390,8 @@ footer .contactSec .socialSec .social {
 .symbollist ul {
   list-style: none;
   padding: 15px 0;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 94fe3bcbe0e8e7f9582ee1ffee1c929ec36c2349
   display: flex;
 }
 
