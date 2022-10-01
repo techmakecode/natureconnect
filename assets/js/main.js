@@ -13,8 +13,8 @@ $(function () {
     });
 
 
-    $(".playbtn").click(function () {
-        var ytubelink = $(this).find('a').attr('rel');
+    $(".playbtn a").click(function () {
+        var ytubelink = $(this).attr('rel');
         $(".popupBox").fadeIn();
         $(".videopopup .videobox").find('iframe').attr('src', ytubelink);
 
