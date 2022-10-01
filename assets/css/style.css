@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+.nobgcolor {
+  background-color: transparent !important;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
@@ -1260,44 +1264,6 @@ footer .contactSec .socialSec .social {
   padding: 0 20%;
 }
 
-.location .gallerySec {
-  background: #1F2C01;
-  padding: 5%;
-}
-
-.location .gallerySec h2 {
-  color: #fff;
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: 50px;
-}
-
-.location .gallerySec .imgGallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-.location .gallerySec .imgGallery a {
-  -ms-flex-preferred-size: calc(33% - 5px);
-      flex-basis: calc(33% - 5px);
-}
-
-.location .bg {
-  background-repeat: no-repeat;
-  background-position: 0 60px;
-  background-size: 100% 100%;
-}
-
 .location .infoSec {
   padding: 5% 0 10% 0;
 }
@@ -1359,6 +1325,128 @@ footer .contactSec .socialSec .social {
 
 .location .infoSecBox .infoSecContent li:last-child p {
   margin-bottom: 0;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: 100% 100%;
+}
+
+.gallerySec {
+  background: #1F2C01;
+  padding: 5%;
+}
+
+.gallerySec h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.gallerySec .imgGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.gallerySec .imgGallery a {
+  -ms-flex-preferred-size: calc(33% - 5px);
+      flex-basis: calc(33% - 5px);
+}
+
+.gallerySec .exteriorGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.gallerySec .exteriorGallery .col2 {
+  -ms-flex-preferred-size: calc(33% - 5px);
+      flex-basis: calc(33% - 5px);
+}
+
+.gallerySec .exteriorGallery .col {
+  -ms-flex-preferred-size: calc(33% - 5px);
+      flex-basis: calc(33% - 5px);
+}
+
+.gallerySec .exteriorGallery a {
+  margin: 0 0 10px 0;
+  display: inline-table;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.gallerySec .exteriorGallery a img {
+  width: 100%;
+}
+
+.gallerySec .videoGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.gallerySec .videoGallery .col2 {
+  -ms-flex-preferred-size: calc(33% - 5px);
+      flex-basis: calc(33% - 5px);
+}
+
+.gallerySec .videoGallery .col {
+  -ms-flex-preferred-size: calc(33% - 5px);
+      flex-basis: calc(33% - 5px);
+}
+
+.gallerySec .videoGallery a {
+  margin: 0 0 15px 0;
+  display: inline-table;
+  position: relative;
+}
+
+.gallerySec .videoGallery a .playbtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.gallerySec .videoGallery a img {
+  width: 100%;
 }
 
 .aboutthevillas {
@@ -1431,6 +1519,13 @@ footer .contactSec .socialSec .social {
   text-align: left;
   list-style: disc;
   margin-bottom: 15px;
+}
+
+.galleryWrp {
+  background: #1F2C01;
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: contain;
 }
 
 .siteplan {

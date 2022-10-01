@@ -83,36 +83,9 @@
          }
      }
 
-     .gallerySec {
-         background: #1F2C01;
-         padding: 5%;
 
-         h2 {
-             color: #fff;
-             text-align: center;
-             font-weight: normal;
-             margin-bottom: 50px;
 
-         }
 
-         .imgGallery {
-             display: flex;
-             flex-wrap: wrap;
-             align-items: center;
-             justify-content: center;
-             gap: 10px;
-
-             a {
-                 flex-basis: calc(33% - 5px);
-             }
-         }
-     }
-
-     .bg {
-         background-repeat: no-repeat;
-         background-position: 0 60px;
-         background-size: 100% 100%;
-     }
 
      .infoSec {
          padding: 5% 0 10% 0;
@@ -164,4 +137,113 @@
              }
          }
      }
+
+
+ }
+
+ .bg {
+     background-repeat: no-repeat;
+     background-position: 0 60px;
+     background-size: 100% 100%;
+ }
+
+ .gallerySec {
+     background: #1F2C01;
+     padding: 5%;
+
+     h2 {
+         color: #fff;
+         text-align: center;
+         font-weight: normal;
+         margin-bottom: 50px;
+         text-transform: uppercase;
+
+     }
+
+     .imgGallery {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+
+         a {
+             flex-basis: calc(33% - 5px);
+         }
+     }
+
+     .exteriorGallery {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+
+         .col2 {
+             flex-basis: calc(33% - 5px);
+
+
+         }
+
+         .col {
+             flex-basis: calc(33% - 5px);
+
+
+         }
+
+         a {
+             margin: 0 0 10px 0;
+             display: inline-table;
+             align-items: flex-start;
+             position: relative;
+
+             img {
+                 width: 100%;
+             }
+         }
+
+
+     }
+
+     .videoGallery {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+
+         .col2 {
+             flex-basis: calc(33% - 5px);
+
+
+         }
+
+         .col {
+             flex-basis: calc(33% - 5px);
+
+
+         }
+
+         a {
+             margin: 0 0 15px 0;
+             display: inline-table;
+             position: relative;
+
+             .playbtn {
+                 position: absolute;
+                 left: 50%;
+                 top: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+                 width: 50px;
+                 height: 50px;
+
+             }
+
+             img {
+                 width: 100%;
+             }
+         }
+     }
+
  }
