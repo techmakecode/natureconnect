@@ -248,26 +248,69 @@ img {
     width: 100%;
 
     .tablink {
+        display: flex;
 
         li {
-            display: inline-flex;
-            flex-basis: 16.66%;
-            padding: 10px;
+            border-bottom: 1px solid $greencolor;
+            flex-grow: 1;
+            padding: 12px 0;
+
+            &.active {
+                border-bottom: 4px solid $greencolor;
+
+            }
 
             a {
-                border-bottom: 1px solid $greencolor;
+                text-decoration: none;
+                color: $greencolor;
+                padding: 12px 0;
+
+
+
+                &.active {
+                    border-bottom: 4px solid $greencolor;
+
+                }
             }
         }
+
     }
 
     .tabData {
-
+        margin: 40px auto;
+        display: table;
 
         .tabDetails {
             float: left;
             width: 100%;
             padding: 25px 0 0 0;
             display: none;
+
+            .textcopy {
+                float: left;
+                width: 40%;
+                text-align: left;
+                padding-right: 30px;
+                font-size: 14px;
+
+                .btn {
+                    font-size: 14px;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    text-transform: uppercase;
+                }
+            }
+
+            .img {
+                float: left;
+                width: 60%;
+
+                image-rendering: {
+                    width: 100%
+                }
+
+                ;
+            }
 
 
         }
