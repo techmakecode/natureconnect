@@ -1357,6 +1357,10 @@ footer .contactSec .socialSec .social {
   border-color: #ffffff;
 }
 
+.location .infoSecBox .infoSecContent li:last-child p {
+  margin-bottom: 0;
+}
+
 .aboutthevillas {
   background-repeat: no-repeat;
   background-position: 0 0;
