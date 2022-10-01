@@ -1041,6 +1041,9 @@ h2 {
   color: #fff;
   border-color: #ffffff;
 }
+.location .infoSecBox .infoSecContent li:last-child p {
+  margin-bottom: 0;
+}
 
 .aboutthevillas {
   background-repeat: no-repeat;

@@ -156,6 +156,12 @@
                  color: #fff;
                  border-color: #ffffff;
              }
+
+             li:last-child {
+                 p {
+                     margin-bottom: 0;
+                 }
+             }
          }
      }
  }
