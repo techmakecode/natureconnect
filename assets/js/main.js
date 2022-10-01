@@ -80,4 +80,13 @@ $(function () {
         }
     });
 
+    $(document).on('click', '.tablink li a', function() {
+        
+        $(".tabData .tabDetails").hide();
+        $(this).addClass("active").parent("li").siblings("li").find("a").removeClass("active");
+        var indexe = $(this).parent().index();
+        alert(indexe);
+        $(this).parents(".tabsWrap").find(".tabData .tabDetails").eq(e).fadeIn()
+    });
+
 });

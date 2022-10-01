@@ -242,3 +242,34 @@ img {
     align-items: center;
     height: 100vh;
 }
+
+.tabsWrap {
+    float: left;
+    width: 100%;
+
+    .tablink {
+
+        li {
+            display: inline-flex;
+            flex-basis: 16.66%;
+            padding: 10px;
+
+            a {
+                border-bottom: 1px solid $greencolor;
+            }
+        }
+    }
+
+    .tabData {
+
+
+        .tabDetails {
+            float: left;
+            width: 100%;
+            padding: 25px 0 0 0;
+            display: none;
+
+
+        }
+    }
+}
