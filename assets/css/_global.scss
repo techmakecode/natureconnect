@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: $basefontD;
 
     @media screen and (max-width: 767px) {
@@ -23,6 +23,7 @@ h1,
 h2,
 h3,
 h4 {
+    font-family: 'Gilda Display', serif;
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
     color: $titlecolor;
@@ -152,7 +153,7 @@ img {
         }
 
         .active {
-            color: $color_2 !important;
+            color: $color_2  !important;
         }
     }
 }
@@ -183,7 +184,7 @@ img {
         }
 
         .active {
-            color: $color_2 !important;
+            color: $color_2  !important;
         }
 
         .logo {
