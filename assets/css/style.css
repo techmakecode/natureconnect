@@ -600,7 +600,7 @@ img {
 .videoSection .textWrp::before {
   content: '';
   position: absolute;
-  background: url(/assets/images/text-wrap-bg.png) no-repeat 0 0;
+  background: url(../images/text-wrap-bg.png) no-repeat 0 0;
   background-size: cover;
   left: 50%;
   top: 50%;
