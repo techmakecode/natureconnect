@@ -1,6 +1,149 @@
- 
-.location {
-    box-sizing: border-box;
-}
+ .location {
+     box-sizing: border-box;
 
- 
+     .videoSection {
+         .textWrp {
+             padding: 0 27%;
+
+             h4 {
+                 color: #fff;
+                 font-size: 26px;
+                 font-weight: bold;
+                 margin: 5px 0 40px 0;
+             }
+         }
+
+         .playbtn {
+             h2 {
+                 color: #fff;
+                 text-align: center;
+                 font-size: 45px;
+                 margin-bottom: 30px;
+
+                 small {
+                     font-size: 15px;
+                     display: block;
+                 }
+             }
+         }
+     }
+
+     .aboutWrp.aboutUsWrp {
+         height: auto;
+
+         .lcoationDtls {
+             display: flex;
+             align-items: center;
+             max-width: 1400px;
+             margin: 120px auto 0 auto;
+             padding: 0 10%;
+             gap: 70px;
+
+             div,
+             ul {
+
+                 flex-basis: 50%;
+             }
+
+             ul {
+                 margin: 0;
+                 padding: 0 5%;
+                 list-style: none;
+
+                 li {
+                     display: flex;
+                     justify-content: space-between;
+                     color: #fff;
+                     padding: 16px 0;
+
+                     &+li {
+                         border-top: solid 1px #FFFFFF;
+                     }
+                 }
+             }
+         }
+
+     }
+
+     .aboutSec {
+         height: auto;
+         margin: 0 auto;
+
+         h2 {
+             font-weight: 500;
+         }
+
+         h4 {
+             font-weight: normal;
+         }
+
+         .midcenter {
+             flex-direction: column;
+             padding: 0 20%;
+         }
+     }
+
+     .gallerySec {
+         background: #1F2C01;
+         padding: 5%;
+
+         h2 {
+             color: #fff;
+             text-align: center;
+             font-weight: normal;
+             margin-bottom: 50px;
+
+         }
+
+         .imgGallery {
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: center;
+             gap: 10px;
+
+             a {
+                 flex-basis: calc(33% - 5px);
+             }
+         }
+     }
+
+     .infoSecBox {
+         display: inline-flex;
+         align-items: center;
+         margin: auto;
+         max-width: 1500px;
+
+         .img {
+             flex-basis: 50%;
+         }
+
+         .infoSecContent {
+             padding: 10% 40px;
+             background: #4E5C3D;
+             display: flex;
+             flex-basis: 50%;
+             flex-direction: column;
+             justify-content: center;
+             font-family: 'Avenir';
+
+             h3 {
+                 color: #FFFF00;
+                 font-size: 20px;
+                 font-weight: 900;
+             }
+
+             p {
+                 font-size: 20px;
+                 color: #fff;
+                 margin-bottom: 40px;
+             }
+
+             .btn {
+                 background: transparent;
+                 color: #fff;
+                 border-color: #ffffff;
+             }
+         }
+     }
+ }
