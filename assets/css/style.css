@@ -924,7 +924,7 @@ h2 {
   align-items: center;
   max-width: 1400px;
   margin: 120px auto 0 auto;
-  padding: 0 10%;
+  padding: 0 10% 4% 10%;
   gap: 70px;
 }
 .location .aboutWrp.aboutUsWrp .lcoationDtls div,
@@ -979,23 +979,32 @@ h2 {
 .location .gallerySec .imgGallery a {
   flex-basis: calc(33% - 5px);
 }
+.location .bg {
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: 100% 100%;
+}
+.location .infoSec {
+  padding: 5% 0 10% 0;
+}
 .location .infoSecBox {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   margin: auto;
   max-width: 1500px;
 }
 .location .infoSecBox .img {
   flex-basis: 50%;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
 }
 .location .infoSecBox .infoSecContent {
-  padding: 10% 40px;
+  padding: 40px;
   background: #4E5C3D;
   display: flex;
   flex-basis: 50%;
   flex-direction: column;
   justify-content: center;
-  font-family: "Avenir";
 }
 .location .infoSecBox .infoSecContent h3 {
   color: #FFFF00;

@@ -36,7 +36,7 @@
              align-items: center;
              max-width: 1400px;
              margin: 120px auto 0 auto;
-             padding: 0 10%;
+             padding: 0 10% 4% 10%;
              gap: 70px;
 
              div,
@@ -108,24 +108,36 @@
          }
      }
 
+     .bg {
+         background-repeat: no-repeat;
+         background-position: 0 60px;
+         background-size: 100% 100%;
+     }
+
+     .infoSec {
+         padding: 5% 0 10% 0;
+     }
+
      .infoSecBox {
-         display: inline-flex;
-         align-items: center;
+         display: flex;
          margin: auto;
          max-width: 1500px;
 
          .img {
              flex-basis: 50%;
+             margin: 50px 0;
+             display: flex;
+             align-items: center;
          }
 
          .infoSecContent {
-             padding: 10% 40px;
+             padding: 40px;
              background: #4E5C3D;
              display: flex;
              flex-basis: 50%;
              flex-direction: column;
              justify-content: center;
-             font-family: 'Avenir';
+             //  font-family: 'Avenir';
 
              h3 {
                  color: #FFFF00;
