@@ -5,6 +5,10 @@
          .textWrp {
              padding: 0 27%;
 
+             @media screen and (max-width: 767px) {
+                 padding: 20px;
+             }
+
              h4 {
                  color: #fff;
                  font-size: 26px;
@@ -19,6 +23,11 @@
                  text-align: center;
                  font-size: 45px;
                  margin-bottom: 30px;
+
+                 @media screen and (max-width: 767px) {
+                     font-size: 20px;
+                     margin-bottom: 10px;
+                 }
 
                  small {
                      font-size: 15px;
@@ -38,6 +47,11 @@
              margin: 120px auto 0 auto;
              padding: 0 10% 4% 10%;
              gap: 70px;
+
+             @media screen and (max-width: 767px) {
+               flex-direction: column;
+               margin: 0;
+            }
 
              div,
              ul {
@@ -69,6 +83,10 @@
          height: auto;
          margin: 0 auto;
 
+         @media screen and (max-width: 767px) {
+             padding: 20px;
+         }
+
          h2 {
              font-weight: 500;
          }
@@ -89,6 +107,10 @@
 
      .infoSec {
          padding: 5% 0 10% 0;
+
+         @media screen and (max-width: 767px) {
+             padding: 0;
+         }
      }
 
      .infoSecBox {
@@ -96,11 +118,21 @@
          margin: auto;
          max-width: 1500px;
 
+         @media screen and (max-width: 767px) {
+             max-width: 100%;
+             flex-direction: column;
+         }
+
          .img {
              flex-basis: 50%;
              margin: 50px 0;
              display: flex;
              align-items: center;
+
+             @media screen and (max-width: 767px) {
+                 flex-basis: 100%;
+                 margin: 0;
+             }
          }
 
          .infoSecContent {
@@ -112,16 +144,29 @@
              justify-content: center;
              //  font-family: 'Avenir';
 
+             @media screen and (max-width: 767px) {
+                 flex-basis: 100%;
+                 margin: 0;
+             }
+
              h3 {
                  color: #FFFF00;
                  font-size: 20px;
                  font-weight: 900;
+
+                 @media screen and (max-width: 767px) {
+                     font-size: 15px;
+                 }
              }
 
              p {
                  font-size: 20px;
                  color: #fff;
                  margin-bottom: 40px;
+
+                 @media screen and (max-width: 767px) {
+                     font-size: 15px;
+                 }
              }
 
              .btn {
@@ -169,6 +214,10 @@
 
          a {
              flex-basis: calc(33% - 5px);
+
+             @media screen and (max-width: 768px) {
+                 flex-basis: calc(100% - 5px);
+             }
          }
      }
 
