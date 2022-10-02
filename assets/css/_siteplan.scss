@@ -1,6 +1,85 @@
- 
-.siteplan {
-    box-sizing: border-box;
-}
+ .siteplan {
+     box-sizing: border-box;
 
- 
+     .aboutSec {
+         height: auto;
+     }
+
+     .tabsWrap {
+         display: flex;
+         align-items: center;
+         max-width: 1400px;
+         margin: 0px auto;
+         padding: 0 10% 4% 10%;
+         gap: 70px;
+
+         @media screen and (max-width: 767px) {
+             flex-direction: column;
+             margin: 0;
+         }
+
+         div,
+         ul {
+
+             flex-basis: 50%;
+         }
+
+         @media screen and (max-width: 767px) {
+
+             div,
+             ul {
+                 width: 100%;
+                 flex-basis: 100%;
+             }
+         }
+
+         .tab-pane {
+             color: #4E5C3D;
+
+             h3 {
+                 font-size: 18px;
+                 font-weight: 900;
+                 color: #4E5C3D;
+
+             }
+         }
+
+         ul {
+             margin: 0;
+             padding: 0 5%;
+             list-style: none;
+
+             li {
+                 display: flex;
+                 font-size: 20px;
+                 justify-content: space-between;
+                 color: #4E5C3D;
+                 padding: 16px 0;
+                 cursor: pointer;
+                 border-radius: 0;
+                 position: relative;
+
+                 &+li {
+                     border-top: solid 1px #062929;
+                 }
+
+                 &.active {
+                     font-weight: 900;
+                     background: none;
+                     color: #4E5C3D;
+                 }
+
+                 &::after {
+                     content: '';
+                     background: url('../images/plus.svg') no-repeat left top;
+                     width: 24px;
+                     height: 24px;
+                     position: absolute;
+                     right: 0;
+                     top: 18px;
+                 }
+             }
+         }
+
+     }
+ }

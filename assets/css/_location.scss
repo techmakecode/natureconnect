@@ -40,7 +40,7 @@
      .aboutWrp.aboutUsWrp {
          height: auto;
 
-         .lcoationDtls {
+         .locationDtls {
              display: flex;
              align-items: center;
              max-width: 1400px;
@@ -49,9 +49,9 @@
              gap: 70px;
 
              @media screen and (max-width: 767px) {
-               flex-direction: column;
-               margin: 0;
-            }
+                 flex-direction: column;
+                 margin: 0;
+             }
 
              div,
              ul {
