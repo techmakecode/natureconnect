@@ -242,19 +242,30 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    @media screen and (max-width: 767px) {
+        height: 100%;
+    }
 }
 
 .tabsWrap {
-    float: left;
-    width: 100%;
+
 
     .tablink {
         display: flex;
 
+        @media screen and (max-width: 767px) {
+           flex-direction: column;
+        }
+
         li {
             border-bottom: 1px solid $greencolor;
             flex-grow: 1;
-            padding: 12px 0;
+            line-height: 40px;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
 
             &.active {
                 border-bottom: 4px solid $greencolor;
@@ -264,8 +275,13 @@ img {
             a {
                 text-decoration: none;
                 color: $greencolor;
-                padding: 12px 0;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
 
+                @media screen and (max-width: 767px) {
+                    justify-content: left;
+                }
 
 
                 &.active {
@@ -278,21 +294,22 @@ img {
     }
 
     .tabData {
-        margin: 40px auto;
-        display: table;
+        margin: 30px auto;
+        display: flex;
 
         .tabDetails {
-            float: left;
-            width: 100%;
-            padding: 25px 0 0 0;
-            display: none;
-
+              
             .textcopy {
                 float: left;
                 width: 40%;
                 text-align: left;
                 padding-right: 30px;
                 font-size: 14px;
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
 
                 .btn {
                     font-size: 14px;
@@ -306,6 +323,10 @@ img {
                 float: left;
                 width: 60%;
 
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
+
                 image-rendering: {
                     width: 100%
                 }
@@ -317,5 +338,5 @@ img {
         }
     }
 
-    
+
 }

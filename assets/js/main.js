@@ -80,12 +80,12 @@ $(function () {
         }
     });
 
-    $(document).on('click', '.tablink li', function() {
+    // $(document).on('click', '.tablink li', function() {
         
-        $(".tabData .tabDetails").hide();
-        $(this).addClass("active").siblings("li").removeClass("active");
-        var indexe = $(this).index(); 
-        $(this).parents(".tabsWrap").find(".tabData .tabDetails").eq(indexe).show()
-    });
+    //     $(".tabData .tabDetails").hide();
+    //     $(this).addClass("active").siblings("li").removeClass("active");
+    //     var indexe = $(this).index(); 
+    //     $(this).parents(".tabsWrap").find(".tabData .tabDetails").eq(indexe).show()
+    // });
 
 });

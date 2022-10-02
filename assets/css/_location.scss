@@ -182,12 +182,19 @@
          .col2 {
              flex-basis: calc(33% - 5px);
 
+             @media screen and (max-width: 768px) {
+                 flex-basis: calc(100% - 5px);
+             }
+
 
          }
 
          .col {
              flex-basis: calc(33% - 5px);
 
+             @media screen and (max-width: 768px) {
+                 flex-basis: calc(100% - 5px);
+             }
 
          }
 
@@ -215,13 +222,18 @@
          .col2 {
              flex-basis: calc(33% - 5px);
 
+             @media screen and (max-width: 768px) {
+                 flex-basis: calc(100% - 5px);
+             }
 
          }
 
          .col {
              flex-basis: calc(33% - 5px);
 
-
+             @media screen and (max-width: 768px) {
+                 flex-basis: calc(100% - 5px);
+             }
          }
 
          a {

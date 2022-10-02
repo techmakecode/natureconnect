@@ -176,6 +176,65 @@
     }
 }
 
+.imgkma {
+    height: 100vh;
+
+    @media screen and (max-width: 767px) {
+        height: 500px;
+
+        .video-preview {
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 400px;
+
+        .video-preview {
+            height: 100%;
+        }
+    }
+
+    .textWrp {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+        width: 100%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/text-wrap-bg.png) no-repeat 0 0;
+            background-size: cover;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+}
+
 /* Video Componant Starts */
 
 .videoSection {
@@ -213,7 +272,7 @@
 
         25%,
         75% {
-            opacity: 1;
+            opacity: .5;
         }
 
         100% {
@@ -233,11 +292,12 @@
             width: 120px;
             display: block;
             margin: 0 auto;
+            @media screen and (max-width: 767px) {
+                width: 60px;
+            }
         }
 
-        @media screen and (max-width: 767px) {
-            width: 60px;
-        }
+        
     }
 
     .videoKma {
@@ -271,44 +331,13 @@
         }
     }
 
-    .textWrp {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-
-        text-align: center;
-        width: 100%;
-
-        &::before {
-            content: '';
-            position: absolute;
-            background: url(../images/text-wrap-bg.png) no-repeat 0 0;
-            background-size: cover;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            height: 100vh;
-            width: 100%;
-            z-index: -1;
-        }
-
-        h1 {
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        p {
-            color: #fff;
-        }
-    }
 
     .videobox,
     .videoKma {
         position: relative;
     }
+
+
 }
 
 
@@ -378,6 +407,10 @@
     .swiper-slide {
         height: 100vh;
 
+        @media screen and (max-width: 768px) {
+            height: 100%;
+        }
+
         &.swiper-slide-active {
             .btn {
                 bottom: 30px;
@@ -388,7 +421,7 @@
 
     .swiper-pagination {
         bottom: 0;
-        position: relative; 
+        position: relative;
 
         .swiper-pagination-bullet {
             background-color: transparent;
