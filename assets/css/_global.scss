@@ -122,10 +122,16 @@ img {
         .logo-img {
             width: 160px;
         }
+
+        background-color: #fff;
     }
 
     .container {
         max-width: max-content;
+
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
     }
 
     .icon-bar {
@@ -139,9 +145,13 @@ img {
             font-weight: 400;
             letter-spacing: 1px;
             color: $color_1;
-            margin: 5px;
+            margin: 5px 15px;
             -webkit-transition: all 0.4s;
             transition: all 0.4s;
+
+            @media screen and (max-width: 768px) {
+                font-size: $basefontM;
+            }
 
             &:hover {
                 color: $color_2;
@@ -354,5 +364,3 @@ img {
     }
 
 }
-
- 
