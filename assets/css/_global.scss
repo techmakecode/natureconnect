@@ -255,7 +255,7 @@ img {
         display: flex;
 
         @media screen and (max-width: 767px) {
-           flex-direction: column;
+            flex-direction: column;
         }
 
         li {
@@ -298,7 +298,7 @@ img {
         display: flex;
 
         .tabDetails {
-              
+
             .textcopy {
                 float: left;
                 width: 40%;
@@ -340,3 +340,19 @@ img {
 
 
 }
+
+.bgspace {
+    padding: 300px 0 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    background-color: #1f2c01;
+
+
+    .contactSec {
+        background-color: transparent;
+    }
+
+}
+
+ 

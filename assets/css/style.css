@@ -349,6 +349,18 @@ img {
   }
 }
 
+.bgspace {
+  padding: 300px 0 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-color: #1f2c01;
+}
+
+.bgspace .contactSec {
+  background-color: transparent;
+}
+
 .aboutWrp {
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -581,7 +593,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .imgkma .textWrp::before {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -615,8 +627,8 @@ img {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  -webkit-animation: clouds calc(3s * var(--i)) linear infinite;
-          animation: clouds calc(3s * var(--i)) linear infinite;
+  -webkit-animation: clouds calc(8s * var(--i)) linear infinite;
+          animation: clouds calc(8s * var(--i)) linear infinite;
 }
 
 .videoSection .clouds img.top {
@@ -632,7 +644,7 @@ img {
   }
   25%,
   75% {
-    opacity: .5;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -649,7 +661,7 @@ img {
   }
   25%,
   75% {
-    opacity: .5;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -685,6 +697,8 @@ img {
 
 .videoSection .videoKma img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .videoSection .videobox,
