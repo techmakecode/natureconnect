@@ -12,6 +12,12 @@ $(function () {
         }
     });
 
+    $(".contactlink").click(function () {
+        console.log($('.navbar').height() + 40)
+        $('html, body').animate({
+            scrollTop: $('.contactSec').offset().top - ($('.navbar').height() + 40)
+        }, 1000);
+    });
 
     $(".playbtn a").click(function () {
         var ytubelink = $(this).attr('rel');
@@ -81,7 +87,7 @@ $(function () {
     });
 
     // $(document).on('click', '.tablink li', function() {
-        
+
     //     $(".tabData .tabDetails").hide();
     //     $(this).addClass("active").siblings("li").removeClass("active");
     //     var indexe = $(this).index(); 

@@ -1746,8 +1746,12 @@ footer .contactSec .socialSec .social {
 .aboutthevillaspage .galleryWrp {
   background: #1F2C01;
   background-repeat: no-repeat;
-  background-position: 0 60px;
+  background-position: 0 0;
   background-size: contain;
+}
+
+.aboutthevillaspage .p20 {
+  padding-top: 20%;
 }
 
 .siteplan {
