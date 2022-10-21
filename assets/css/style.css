@@ -38,13 +38,13 @@ h1 {
   margin-bottom: 20px;
   text-transform: uppercase;
   line-height: 1.35em;
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
 }
 
 h4 {
   font-size: 20px;
   font-weight: 600;
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -92,7 +92,7 @@ img {
   bottom: 0;
   left: 100%;
   z-index: 1;
-  background: #222;
+  background: rgba(78, 92, 61, 0.8);
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -162,7 +162,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
 }
 
 .navbar .navbar-nav .nav-link.nav-color {
@@ -170,7 +170,7 @@ img {
 }
 
 .navbar .navbar-nav .active {
-  color: #000 !important;
+  color: rgba(78, 92, 61, 0.8) !important;
 }
 
 .nav-scroll {
@@ -191,7 +191,7 @@ img {
 }
 
 .nav-scroll .icon-bar {
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
 }
 
 .nav-scroll .navbar-nav .nav-link {
@@ -199,12 +199,12 @@ img {
 }
 
 .nav-scroll .navbar-nav .active {
-  color: #000 !important;
+  color: rgba(78, 92, 61, 0.8) !important;
 }
 
 .nav-scroll .navbar-nav .logo {
   padding: 15px 0;
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
 }
 
 .nav-scroll .logo-img {
@@ -220,7 +220,7 @@ img {
   display: block;
   width: 100%;
   position: relative;
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
   letter-spacing: 3px;
   margin-bottom: 0;
 }
@@ -229,7 +229,7 @@ img {
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 10px;
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
   font-weight: 400;
   letter-spacing: 7px;
   display: block;
@@ -410,7 +410,7 @@ img {
 .aboutSec {
   text-align: center;
   max-width: 900px;
-  height: 520px;
+  height: 80vh;
   margin: auto;
   background-repeat: no-repeat;
   background-position: center center;
@@ -511,7 +511,7 @@ img {
 }
 
 .header .social a {
-  color: #000;
+  color: rgba(78, 92, 61, 0.8);
   font-size: 20px;
   margin: 10px 15px;
 }
@@ -659,7 +659,7 @@ img {
   }
   25%,
   75% {
-    opacity: 1;
+    opacity: .8;
   }
   100% {
     opacity: 0;
@@ -676,7 +676,7 @@ img {
   }
   25%,
   75% {
-    opacity: 1;
+    opacity: .8;
   }
   100% {
     opacity: 0;
@@ -719,6 +719,11 @@ img {
 .videoSection .videobox,
 .videoSection .videoKma {
   position: relative;
+}
+
+.videoSection .videobox video,
+.videoSection .videoKma video {
+  width: 100%;
 }
 
 .popupBox {
@@ -783,23 +788,48 @@ img {
   }
 }
 
-.sliderWrp .swiper-slide {
-  height: 100vh;
+.sliderWrp .swiper-slide.swiper-slide-active img {
+  -webkit-animation: zoom 10s ease-in-out;
+          animation: zoom 10s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .sliderWrp .swiper-slide {
-    height: 100%;
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 .sliderWrp .swiper-slide.swiper-slide-active .btn {
-  bottom: 30px;
+  bottom: 50px;
   opacity: 1;
 }
 
 .sliderWrp .swiper-pagination {
-  bottom: 0;
+  bottom: 25px;
   position: relative;
 }
 
@@ -1023,6 +1053,11 @@ img {
   border-color: #ffffff;
 }
 
+.pagislider {
+  height: calc(100vh - 90px);
+  position: relative;
+}
+
 footer .contactSec {
   background: #1f2c01;
   padding: 0 0 5% 0;
@@ -1148,8 +1183,9 @@ footer .contactSec .socialSec {
 }
 
 footer .contactSec .socialSec small {
-  font-size: 0.6em;
+  font-size: .8em;
   text-align: center;
+  letter-spacing: normal;
 }
 
 footer .contactSec .socialSec .social {
@@ -1160,6 +1196,21 @@ footer .contactSec .socialSec .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer .contactSec .flink li {
+  display: inline-block;
+}
+
+footer .contactSec .flink li a {
+  font-size: .9em;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+footer .contactSec .flink li a:hover {
+  text-decoration: underline;
 }
 
 .form input,
@@ -1244,7 +1295,7 @@ footer .contactSec .socialSec .social {
     background-size: cover;
   }
   .aboutWrp .aboutSec.aboutUs h2 {
-    color: #000;
+    color: rgba(78, 92, 61, 0.8);
   }
   .teamssliderWrp {
     height: auto;

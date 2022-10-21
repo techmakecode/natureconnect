@@ -32,7 +32,7 @@
 .aboutSec {
     text-align: center;
     max-width: 900px;
-    height: 520px;
+    height: 80vh;
     margin: auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -219,7 +219,7 @@
 
             @media screen and (max-width: 767px) {
                 width: 100%;
-                
+
             }
         }
 
@@ -274,7 +274,7 @@
 
         25%,
         75% {
-            opacity: 1;
+            opacity: .8;
         }
 
         100% {
@@ -339,6 +339,8 @@
     .videobox,
     .videoKma {
         position: relative;
+
+        video{width: 100%;}
     }
 
 
@@ -409,22 +411,38 @@
     }
 
     .swiper-slide {
-        height: 100vh;
 
-        @media screen and (max-width: 768px) {
-            height: 100%;
-        }
 
         &.swiper-slide-active {
+
+            img {
+                animation: zoom 10s ease-in-out;
+            }
+
+            @keyframes zoom {
+                0% {
+
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
             .btn {
-                bottom: 30px;
+                bottom: 50px;
                 opacity: 1;
             }
         }
     }
 
     .swiper-pagination {
-        bottom: 0;
+        bottom: 25px;
         position: relative;
 
         .swiper-pagination-bullet {
@@ -622,6 +640,11 @@
     }
 }
 
+.pagislider {
+    height: calc(100vh - 90px);
+    position: relative;
+}
+
 footer {
     .contactSec {
         background: #1f2c01;
@@ -723,8 +746,9 @@ footer {
             margin-top: 100px;
 
             small {
-                font-size: 0.6em;
+                font-size: .8em;
                 text-align: center;
+                letter-spacing: normal;
             }
 
             .social {
@@ -733,6 +757,25 @@ footer {
                 list-style: none;
                 gap: 30px;
                 display: flex;
+            }
+        }
+
+        .flink {
+
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-size: .9em;
+                    color: #fff;
+                    text-decoration: none;
+                    letter-spacing: normal;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
@@ -768,7 +811,7 @@ footer {
 
 @media screen and (max-width: 767px) {
     .navbar .container {
-        max-width: 100%; 
+        max-width: 100%;
         // background: #fff;
     }
 

@@ -35,6 +35,20 @@ $(function () {
         grabCursor: true,
         loop: true,
         autoHeight: false,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            origin: "left center",
+            translate: ["-5%", 0, -100],
+            rotate: [0, 100, 0],
+          },
+          next: {
+            origin: "right center",
+            translate: ["5%", 0, -100],
+            rotate: [0, -100, 0],
+          },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true
