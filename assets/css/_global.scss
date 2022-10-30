@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: $basefontD;
 
     @media screen and (max-width: 767px) {
         font-size: $basefontM;
-        letter-spacing: 1px;
     }
 
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 h1,
 h2 {
     font-size: 35px;
-    font-weight: 700;
+    // font-weight: 700;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Gilda Display', serif;
+    //font-family:'Gilda Display', serif;;
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
     color: $titlecolor;
@@ -66,10 +65,11 @@ img {
     color: #4e5c3d;
     text-align: center;
     font-size: $basefontD;
-    padding: 20px 40px;
+    padding: 15px 30px;
     border-radius: 0;
     background: #fff;
     position: relative;
+    text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
         padding: 10px 20px;
@@ -259,8 +259,6 @@ img {
 }
 
 .tabsWrap {
-
-
     .tablink {
         display: flex;
 
@@ -279,7 +277,6 @@ img {
 
             &.active {
                 border-bottom: 4px solid $greencolor;
-
             }
 
             a {
@@ -293,14 +290,11 @@ img {
                     justify-content: left;
                 }
 
-
                 &.active {
                     border-bottom: 4px solid $greencolor;
-
                 }
             }
         }
-
     }
 
     .tabData {
@@ -308,7 +302,6 @@ img {
         display: flex;
 
         .tabDetails {
-
             .textcopy {
                 float: left;
                 width: 40%;
@@ -338,17 +331,11 @@ img {
                 }
 
                 image-rendering: {
-                    width: 100%
+                    width: 100%;
                 }
-
-                ;
             }
-
-
         }
     }
-
-
 }
 
 .bgspace {
@@ -358,9 +345,7 @@ img {
     background-size: contain;
     background-color: #1f2c01;
 
-
     .contactSec {
         background-color: transparent;
     }
-
 }

@@ -100,6 +100,17 @@ $(function () {
         }
     });
 
+    var swiper = new Swiper(".infoSlider", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }, 
+        keyboard: {
+            enabled: true,
+        },
+    });
+
     // $(document).on('click', '.tablink li', function() {
 
     //     $(".tabData .tabDetails").hide();

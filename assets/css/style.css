@@ -1,33 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 .nobgcolor {
   background-color: transparent !important;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 767px) {
   body {
     font-size: 14px;
-    letter-spacing: 1px;
   }
 }
 
 h1,
 h2 {
   font-size: 35px;
-  font-weight: 700;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Gilda Display', serif;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
   color: #062929;
@@ -66,10 +64,11 @@ img {
   color: #4e5c3d;
   text-align: center;
   font-size: 16px;
-  padding: 20px 40px;
+  padding: 15px 30px;
   border-radius: 0;
   background: #fff;
   position: relative;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,7 +144,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "Gilda Display", serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -213,7 +212,7 @@ img {
 }
 
 .nav-scroll .logo-wrapper .logo h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Gilda Display", serif;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -227,7 +226,7 @@ img {
 
 .nav-scroll .logo-wrapper .logo span {
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Gilda Display", serif;
   font-size: 10px;
   color: rgba(78, 92, 61, 0.8);
   font-weight: 400;
@@ -390,6 +389,11 @@ img {
 .aboutWrp .aboutSec {
   margin: 0 auto;
   padding: 60px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 550px;
 }
 
 .aboutWrp .aboutSec.aboutUs {
@@ -412,15 +416,9 @@ img {
   max-width: 900px;
   height: 80vh;
   margin: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -430,9 +428,23 @@ img {
   margin: 60px auto;
 }
 
+.aboutSec .box {
+  width: 70%;
+}
+
+.aboutSec .floresImg {
+  position: absolute;
+  right: 10%;
+  z-index: -1;
+}
+
 .aboutSec .desc {
   margin-bottom: 30px;
   padding: 20px;
+}
+
+.aboutSec .desc h2 {
+  text-transform: uppercase;
 }
 
 .aboutSec .desc p {
@@ -593,7 +605,7 @@ img {
 }
 
 .imgkma .textWrp::before {
-  content: '';
+  content: "";
   position: absolute;
   background: url(../images/text-wrap-bg.png) no-repeat 0 0;
   background-size: cover;
@@ -659,7 +671,7 @@ img {
   }
   25%,
   75% {
-    opacity: .8;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -676,7 +688,7 @@ img {
   }
   25%,
   75% {
-    opacity: .8;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -1183,7 +1195,7 @@ footer .contactSec .socialSec {
 }
 
 footer .contactSec .socialSec small {
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   letter-spacing: normal;
 }
@@ -1203,7 +1215,7 @@ footer .contactSec .flink li {
 }
 
 footer .contactSec .flink li a {
-  font-size: .9em;
+  font-size: 0.9em;
   color: #fff;
   text-decoration: none;
   letter-spacing: normal;
@@ -1415,7 +1427,7 @@ footer .contactSec .flink li a:hover {
 }
 
 .location .aboutWrp.aboutUsWrp .locationDtls ul li + li {
-  border-top: solid 1px #FFFFFF;
+  border-top: solid 1px #ffffff;
 }
 
 .location .aboutSec {
@@ -1443,6 +1455,15 @@ footer .contactSec .flink li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 20%;
+}
+
+.location .infoSlider {
+  width: 95%;
+}
+
+.location .infoSlider .swiper-button-next,
+.location .infoSlider .swiper-button-prev {
+  color: #316f6f;
 }
 
 .location .infoSec {
@@ -1495,7 +1516,7 @@ footer .contactSec .flink li a:hover {
 
 .location .infoSecBox .infoSecContent {
   padding: 40px;
-  background: #4E5C3D;
+  background: #4e5c3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1519,7 +1540,7 @@ footer .contactSec .flink li a:hover {
 }
 
 .location .infoSecBox .infoSecContent h3 {
-  color: #FFFF00;
+  color: #ffff00;
   font-size: 20px;
   font-weight: 900;
 }
@@ -1559,7 +1580,7 @@ footer .contactSec .flink li a:hover {
 }
 
 .gallerySec {
-  background: #1F2C01;
+  background: #1f2c01;
   padding: 5%;
 }
 
