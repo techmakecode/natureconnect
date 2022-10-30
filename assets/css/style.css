@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+figure {
+  margin: 0;
+}
+
 .nobgcolor {
   background-color: transparent !important;
 }
@@ -281,7 +285,7 @@ img {
 }
 
 .tabsWrap .tablink li {
-  border-bottom: 1px solid #4E5C3D;
+  border-bottom: 1px solid #4e5c3d;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -295,12 +299,12 @@ img {
 }
 
 .tabsWrap .tablink li.active {
-  border-bottom: 4px solid #4E5C3D;
+  border-bottom: 4px solid #4e5c3d;
 }
 
 .tabsWrap .tablink li a {
   text-decoration: none;
-  color: #4E5C3D;
+  color: #4e5c3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +323,7 @@ img {
 }
 
 .tabsWrap .tablink li a.active {
-  border-bottom: 4px solid #4E5C3D;
+  border-bottom: 4px solid #4e5c3d;
 }
 
 .tabsWrap .tabData {
@@ -438,6 +442,13 @@ img {
   z-index: -1;
 }
 
+@media screen and (max-width: 400px) {
+  .aboutSec .floresImg {
+    right: 0;
+    width: 50%;
+  }
+}
+
 .aboutSec .desc {
   margin-bottom: 30px;
   padding: 20px;
@@ -543,7 +554,7 @@ img {
 
 @media screen and (max-width: 400px) {
   .fullheight {
-    height: 400px;
+    height: auto;
   }
   .fullheight .video-preview {
     height: 100%;
@@ -556,7 +567,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .herovidFht {
-    height: 100vh;
+    height: auto;
   }
   .herovidFht .video-preview {
     height: 100%;
@@ -565,7 +576,7 @@ img {
 
 @media screen and (max-width: 400px) {
   .herovidFht {
-    height: 100vh;
+    height: auto;
   }
   .herovidFht .video-preview {
     height: 100%;
@@ -1068,6 +1079,12 @@ img {
 .pagislider {
   height: calc(100vh - 90px);
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .pagislider {
+    height: auto;
+  }
 }
 
 footer .contactSec {

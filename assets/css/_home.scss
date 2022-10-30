@@ -49,6 +49,10 @@
         position: absolute;
         right: 10%;
         z-index: -1;
+        @media screen and (max-width: 400px) {
+            right:  0;
+            width: 50%;
+        }
     }
     .desc {
         margin-bottom: 30px;
@@ -155,7 +159,7 @@
     }
 
     @media screen and (max-width: 400px) {
-        height: 400px;
+        height: auto;
 
         .video-preview {
             height: 100%;
@@ -167,7 +171,7 @@
     height: 100vh;
 
     @media screen and (max-width: 767px) {
-        height: 100vh;
+        height: auto; 
 
         .video-preview {
             height: 100%;
@@ -175,7 +179,7 @@
     }
 
     @media screen and (max-width: 400px) {
-        height: 100vh;
+        height: auto;
 
         .video-preview {
             height: 100%;
@@ -630,6 +634,10 @@
 .pagislider {
     height: calc(100vh - 90px);
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        height: auto;
+    }
 }
 
 footer {
