@@ -172,7 +172,7 @@
     height: 100vh;
 
     @media screen and (max-width: 767px) {
-        height: 100vh;
+        height: calc(100vh - 55px);
 
         .video-preview {
             height: 100%;

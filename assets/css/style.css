@@ -568,7 +568,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .herovidFht {
-    height: 100vh;
+    height: calc(100vh - 55px);
   }
   .herovidFht .video-preview {
     height: 100%;
