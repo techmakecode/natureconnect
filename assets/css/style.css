@@ -581,6 +581,18 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .herovidFht .clouds {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .herovidFht .clouds {
+    width: 250%;
+  }
+}
+
 .imgkma {
   height: 100vh;
 }
@@ -657,18 +669,6 @@ img {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-}
-
-@media screen and (max-width: 767px) {
-  .videoSection .clouds {
-    width: 150%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .videoSection .clouds {
-    width: 250%;
-  }
 }
 
 .videoSection .clouds img {

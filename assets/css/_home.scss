@@ -184,6 +184,18 @@
             height: 100%;
         }
     }
+
+    .clouds {
+        @media screen and (max-width: 767px) {
+            width: 150%;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 250%;
+        }
+        
+       
+    }
 }
 
 .imgkma {
@@ -258,15 +270,7 @@
         height: 100%;
         overflow: hidden;
         pointer-events: none;
-
-        @media screen and (max-width: 767px) {
-            width: 150%;
-        }
-
-        @media screen and (max-width: 480px) {
-            width: 250%;
-        }
-
+        
         img {
             position: absolute;
             bottom: 0;
