@@ -50,7 +50,7 @@
         right: 10%;
         z-index: -1;
         @media screen and (max-width: 400px) {
-            right:  0;
+            right: 0;
             width: 50%;
         }
     }
@@ -155,6 +155,7 @@
 
         .video-preview {
             height: 100%;
+            width: 100%;
         }
     }
 
@@ -171,15 +172,16 @@
     height: 100vh;
 
     @media screen and (max-width: 767px) {
-        height: auto; 
+        height: 100vh;
 
         .video-preview {
             height: 100%;
+            
         }
     }
 
     @media screen and (max-width: 400px) {
-        height: auto;
+        
 
         .video-preview {
             height: 100%;
@@ -281,7 +283,7 @@
 
         25%,
         75% {
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
         100% {
@@ -340,9 +342,9 @@
     .videoKma {
         position: relative;
 
-        video {
-            width: 100%;
-        }
+        // video {
+        //     width: 100%;
+        // }
     }
 }
 

@@ -549,6 +549,7 @@ img {
   }
   .fullheight .video-preview {
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -567,7 +568,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .herovidFht {
-    height: auto;
+    height: 100vh;
   }
   .herovidFht .video-preview {
     height: 100%;
@@ -575,9 +576,6 @@ img {
 }
 
 @media screen and (max-width: 400px) {
-  .herovidFht {
-    height: auto;
-  }
   .herovidFht .video-preview {
     height: 100%;
   }
@@ -682,7 +680,7 @@ img {
   }
   25%,
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -699,7 +697,7 @@ img {
   }
   25%,
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -742,11 +740,6 @@ img {
 .videoSection .videobox,
 .videoSection .videoKma {
   position: relative;
-}
-
-.videoSection .videobox video,
-.videoSection .videoKma video {
-  width: 100%;
 }
 
 .popupBox {
