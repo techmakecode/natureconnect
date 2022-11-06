@@ -176,13 +176,10 @@
 
         .video-preview {
             height: 100%;
-            
         }
     }
 
     @media screen and (max-width: 400px) {
-        
-
         .video-preview {
             height: 100%;
         }
@@ -261,6 +258,14 @@
         height: 100%;
         overflow: hidden;
         pointer-events: none;
+
+        @media screen and (max-width: 767px) {
+            width: 150%;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 250%;
+        }
 
         img {
             position: absolute;

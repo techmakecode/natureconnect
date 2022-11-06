@@ -659,6 +659,18 @@ img {
   pointer-events: none;
 }
 
+@media screen and (max-width: 767px) {
+  .videoSection .clouds {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .videoSection .clouds {
+    width: 250%;
+  }
+}
+
 .videoSection .clouds img {
   position: absolute;
   bottom: 0;
