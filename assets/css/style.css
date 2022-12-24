@@ -351,9 +351,7 @@ img {
     padding: 20px;
   }
 
-  .tabsWrap .tab-content.tabData .tab-pane.active .accordion-button {
-    border-bottom: 4px solid #4e5c3d;
-  }
+ 
 }
 
 .tabsWrap .tabData .tabDetails .textcopy .btn {
@@ -2118,7 +2116,6 @@ main {
 .accordion-button {
   text-decoration: none;
   background: transparent !important;
-
   color: #4e5c3d !important;
   border-radius: 0;
   border-bottom: 4px solid #4e5c3d
