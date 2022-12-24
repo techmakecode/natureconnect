@@ -371,7 +371,17 @@ img {
   .tabsWrap .tabData .tabDetails .img {
     width: 100%
   }
+
+  .siteplan .tabsWrap .tab-pane.tabDetails {
+    display: none;
+  }
+
+  .siteplan .tabsWrap .tab-pane.tabDetails.show {
+    display: block;
+  }
 }
+
+
 
 .bgspace {
   padding: 300px 0 0;
@@ -2153,4 +2163,16 @@ main {
   .tabsWrap {
     width: 100%;
   }
+}
+
+@media screen and (max-width:500px) {
+  .siteplan .plantabsWrap ul li a {
+    font-size: 13px; justify-content: center;
+  }
+
+  .siteplan .plantabsWrap ul {
+    display: block;
+  }
+
+  .siteplan .plantabsWrap ul li {float: left; width: 33.33%;}
 }
