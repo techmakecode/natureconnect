@@ -348,7 +348,7 @@ img {
   .tabsWrap .tabData .tabDetails .textcopy {
     width: 100%;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0;
   }
 
  
@@ -2128,12 +2128,13 @@ main {
 
 
 .accordion-body {
-  padding: 0 0 20px 0;
+ 
   display: table;
 }
 
 .accordion-button.collapsed {
   border-bottom: 1px solid #4e5c3d;
+  border-radius: 0 !important;
 }
 
 @media (max-width: 991px) {
