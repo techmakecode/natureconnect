@@ -351,7 +351,7 @@ img {
     padding: 0;
   }
 
- 
+
 }
 
 .tabsWrap .tabData .tabDetails .textcopy .btn {
@@ -2126,9 +2126,7 @@ main {
   background-image: var(--bs-accordion-btn-icon);
 }
 
-
 .accordion-body {
- 
   display: table;
 }
 
